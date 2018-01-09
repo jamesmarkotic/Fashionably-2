@@ -225,6 +225,8 @@
           type: "POST"
           // Access-Control-Allow-Origin: *
         }).done(function(response) {
+          $("#urlinput").val('');
+
           console.log(response);
           var colorOne = response.humanbodies[0].attributes.lower_body_cloth_color;
           console.log(colorOne);

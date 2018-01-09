@@ -2,6 +2,10 @@
 
 
 /* Class Modifications */
+.title {
+  text-align: center;
+}
+
 .emotionbutton {
   height: 125px;
   width: 125px;

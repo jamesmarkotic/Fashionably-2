@@ -1,11 +1,11 @@
 
 var config = {
-    apiKey: "AIzaSyAU8cQZBKgaROIKXMp430csQ9FvoiK_UPM",
-    authDomain: "trainschedule-be074.firebaseapp.com",
-    databaseURL: "https://trainschedule-be074.firebaseio.com",
-    projectId: "trainschedule-be074",
-    storageBucket: "trainschedule-be074.appspot.com",
-    messagingSenderId: "832800897657"
+    apiKey: "AIzaSyAF5EQQcMjKOS8sjk59vsEn3grMYTFLG8A",
+    authDomain: "fashionably-f68d1.firebaseapp.com",
+    databaseURL: "https://fashionably-f68d1.firebaseio.com",
+    projectId: "fashionably-f68d1",
+    storageBucket: "fashionably-f68d1.appspot.com",
+    messagingSenderId: "214704986736"
   };
   firebase.initializeApp(config);
   var database = firebase.database();
@@ -14,8 +14,8 @@ function SaveData(Price, ImageURL, BrandName)
 {
   event.preventDefault();
   var newImage = {
-    name: BrandName,
-    Price: Price,
+    name: brandName,
+    price: Price,
     ImageURL: ImageURL
   };
   database.ref().push(newImage);
@@ -35,7 +35,6 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
   var Price = childSnapshot.val().Price;
   var ImageURL = childSnapshot.val().ImageURL;
 
-  // Train Info
   console.log(Name);
   console.log(Price);
   console.log(ImageURL);
