@@ -16,4 +16,17 @@
   display: inline-block;
   margin: 5px;
 }
+
+.fashimageTwo {
+  display: inline-block;
+  margin: 5px;
+  max-width: 550px;
+  max-height: 280px;
+}
+
 /* ID Modifications */
+
+#heroImage {
+  /* height: 280px;
+  width: 550px */
+}

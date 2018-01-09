@@ -1,10 +1,9 @@
 
-      // displayMovieInfo function re-renders the HTML to display the appropriate content
       var audioElement = document.createElement("audio");
       audioElement.setAttribute("src", "sexy.mp3");
-      function displayMovieInfo() {
 
-//lace dress, red dress
+    function displayMovieInfo() {
+
         audioElement.play();
         var movie = $(this).attr("data-name");
         if (movie=="happyfash") {
@@ -14,7 +13,7 @@
           url: queryURL,
           method: "GET"
         }).done(function(response) {
-          // Creating a div to hold the movie
+
           console.log(response);
 
           for (var i = 0; i < response.products.length; i++) {
@@ -23,10 +22,13 @@
             var imgURL = response.products[i].image.sizes.Medium.url;
             var price = response.products[i].price;
             var brandedName = response.products[i].brandedName;
+            var itemOrigin = response.products[i].clickUrl;
 
-            var image = $("<img>").attr({src: imgURL, title: '$' + price + ', ' + brandedName}).attr("class", "img-responsive img-fluid fashimage");
+            var itemLink = $('<a>').attr({href: itemOrigin, target: '_blank'});
+            var image = $("<img>").attr({src: imgURL, title: '$' + price + ', ' + brandedName}).attr("class", "fashimage img-responsive");
 
-            $("#shopstyle").append(image);
+            $(itemLink).append(image);
+            $("#shopstyle").append(itemLink);
 
         };
 
@@ -40,7 +42,7 @@
           url: queryURL,
           method: "GET"
         }).done(function(response) {
-          // Creating a div to hold the movie
+
           console.log(response);
 
           for (var i = 0; i < response.products.length; i++) {
@@ -49,10 +51,13 @@
             var imgURL = response.products[i].image.sizes.Medium.url;
             var price = response.products[i].price;
             var brandedName = response.products[i].brandedName;
+            var itemOrigin = response.products[i].clickUrl;
 
+            var itemLink = $('<a>').attr({href: itemOrigin, target: '_blank'});
             var image = $("<img>").attr({src: imgURL, title: '$' + price + ', ' + brandedName}).attr("class", "fashimage img-responsive");
 
-            $("#shopstyle").append(image);
+            $(itemLink).append(image);
+            $("#shopstyle").append(itemLink);
 
         };
 
@@ -66,7 +71,7 @@
           url: queryURL,
           method: "GET"
         }).done(function(response) {
-          // Creating a div to hold the movie
+
           console.log(response);
 
           for (var i = 0; i < response.products.length; i++) {
@@ -75,10 +80,13 @@
             var imgURL = response.products[i].image.sizes.Medium.url;
             var price = response.products[i].price;
             var brandedName = response.products[i].brandedName;
+            var itemOrigin = response.products[i].clickUrl;
 
+            var itemLink = $('<a>').attr({href: itemOrigin, target: '_blank'});
             var image = $("<img>").attr({src: imgURL, title: '$' + price + ', ' + brandedName}).attr("class", "fashimage img-responsive");
 
-            $("#shopstyle").append(image);
+            $(itemLink).append(image);
+            $("#shopstyle").append(itemLink);
 
         };
 
@@ -92,7 +100,7 @@
           url: queryURL,
           method: "GET"
         }).done(function(response) {
-          // Creating a div to hold the movie
+
           console.log(response);
 
           for (var i = 0; i < response.products.length; i++) {
@@ -101,10 +109,13 @@
             var imgURL = response.products[i].image.sizes.Medium.url;
             var price = response.products[i].price;
             var brandedName = response.products[i].brandedName;
+            var itemOrigin = response.products[i].clickUrl;
 
+            var itemLink = $('<a>').attr({href: itemOrigin, target: '_blank'});
             var image = $("<img>").attr({src: imgURL, title: '$' + price + ', ' + brandedName}).attr("class", "fashimage img-responsive");
 
-            $("#shopstyle").append(image);
+            $(itemLink).append(image);
+            $("#shopstyle").append(itemLink);
 
         };
 
@@ -118,7 +129,7 @@
           url: queryURL,
           method: "GET"
         }).done(function(response) {
-          // Creating a div to hold the movie
+
           console.log(response);
 
           for (var i = 0; i < response.products.length; i++) {
@@ -127,10 +138,13 @@
             var imgURL = response.products[i].image.sizes.Medium.url;
             var price = response.products[i].price;
             var brandedName = response.products[i].brandedName;
+            var itemOrigin = response.products[i].clickUrl;
 
+            var itemLink = $('<a>').attr({href: itemOrigin, target: '_blank'});
             var image = $("<img>").attr({src: imgURL, title: '$' + price + ', ' + brandedName}).attr("class", "fashimage img-responsive");
 
-            $("#shopstyle").append(image);
+            $(itemLink).append(image);
+            $("#shopstyle").append(itemLink);
 
         };
 
@@ -144,7 +158,7 @@
           url: queryURL,
           method: "GET"
         }).done(function(response) {
-          // Creating a div to hold the movie
+
           console.log(response);
 
           for (var i = 0; i < response.products.length; i++) {
@@ -153,10 +167,13 @@
             var imgURL = response.products[i].image.sizes.Medium.url;
             var price = response.products[i].price;
             var brandedName = response.products[i].brandedName;
+            var itemOrigin = response.products[i].clickUrl;
 
+            var itemLink = $('<a>').attr({href: itemOrigin, target: '_blank'});
             var image = $("<img>").attr({src: imgURL, title: '$' + price + ', ' + brandedName}).attr("class", "fashimage img-responsive");
 
-            $("#shopstyle").append(image);
+            $(itemLink).append(image);
+            $("#shopstyle").append(itemLink);
 
         };
 
@@ -170,7 +187,7 @@
           url: queryURL,
           method: "GET"
         }).done(function(response) {
-          // Creating a div to hold the movie
+
           console.log(response);
 
           for (var i = 0; i < response.products.length; i++) {
@@ -179,10 +196,13 @@
             var imgURL = response.products[i].image.sizes.Medium.url;
             var price = response.products[i].price;
             var brandedName = response.products[i].brandedName;
+            var itemOrigin = response.products[i].clickUrl;
 
+            var itemLink = $('<a>').attr({href: itemOrigin, target: '_blank'});
             var image = $("<img>").attr({src: imgURL, title: '$' + price + ', ' + brandedName}).attr("class", "fashimage img-responsive");
 
-            $("#shopstyle").append(image);
+            $(itemLink).append(image);
+            $("#shopstyle").append(itemLink);
 
         };
 
@@ -192,9 +212,9 @@
 
         if (movie=="yourfash") {
           var imageUrl = $("#urlinput").val().trim();
-
+          $("#shopstyle").empty();
           // Appending the image
-          $("#heroImage").html($("<img>").attr("src",imageUrl));
+          $("#heroImage").html($("<img>").attr({src:imageUrl, class: "fashimageTwo img-responsive"}));
           var APIkey = "b6MXLXj9cETIUjDe4DMVy6SGuDlrtLko"
           var APIsecret = "BP2cM4JvuRe1f5bH-G25OPJIQ5hanehq"
 
@@ -235,15 +255,15 @@
             var imgURL = response.products[i].image.sizes.Medium.url;
             var price = response.products[i].price;
             var brandedName = response.products[i].brandedName;
+            var itemOrigin = response.products[i].clickUrl;
 
+            var itemLink = $('<a>').attr({href: itemOrigin, target: '_blank'});
             var image = $("<img>").attr({src: imgURL, title: '$' + price + ', ' + brandedName}).attr("class", "fashimage img-responsive");
 
-            $("#shopstyle").append(image);
+            $(itemLink).append(image);
+            $("#shopstyle").append(itemLink);
         };
       });
-
-        // This line grabs the input from the textbox
-
 
         });
       };
@@ -259,7 +279,7 @@
           url: queryURL,
           method: "GET"
         }).done(function(response) {
-          // Creating a div to hold the movie
+
           console.log(response);
 
           for (var i = 0; i < response.products.length; i++) {
@@ -268,10 +288,13 @@
             var imgURL = response.products[i].image.sizes.Medium.url;
             var price = response.products[i].price;
             var brandedName = response.products[i].brandedName;
+            var itemOrigin = response.products[i].clickUrl;
 
+            var itemLink = $('<a>').attr({href: itemOrigin, target: '_blank'});
             var image = $("<img>").attr({src: imgURL, title: '$' + price + ', ' + brandedName}).attr("class", "fashimage img-responsive");
 
-            $("#shopstyle").append(image);
+            $(itemLink).append(image);
+            $("#shopstyle").append(itemLink);
 
         };
 
@@ -287,7 +310,7 @@
           url: queryURL,
           method: "GET"
         }).done(function(response) {
-          // Creating a div to hold the movie
+
           console.log(response);
 
           for (var i = 0; i < response.products.length; i++) {
@@ -296,48 +319,20 @@
             var imgURL = response.products[i].image.sizes.Medium.url;
             var price = response.products[i].price;
             var brandedName = response.products[i].brandedName;
+            var itemOrigin = response.products[i].clickUrl;
 
+            var itemLink = $('<a>').attr({href: itemOrigin, target: '_blank'});
             var image = $("<img>").attr({src: imgURL, title: '$' + price + ', ' + brandedName}).attr("class", "fashimage img-responsive");
 
-            $("#shopstyle").append(image);
+            $(itemLink).append(image);
+            $("#shopstyle").append(itemLink);
 
         };
 
         });
       };
     };
-      // Function for displaying movie data
-      function renderButtons() {
-        // Deleting the movies prior to adding new movies
-        // (this is necessary otherwise you will have repeat buttons)
-        $("#buttons-view").empty();
-        // Looping through the array of movies
-        for (var i = 0; i < movies.length; i++) {
-          // Then dynamicaly generating buttons for each movie in the array
-          // This code $("<button>") is all jQuery needs to create the beginning and end tag. (<button></button>)
-          var a = $("<button>");
-          // Adding a class of movie to our button
-          a.addClass("movie");
-          // Adding a data-attribute
-          a.attr("data-name", movies[i]);
-          // Providing the initial button text
-          a.text(movies[i]);
-          // Adding the button to the buttons-view div
-          $("#buttons-view").append(a);
-        }
-      }
-      // This function handles events where a movie button is clicked
-      $("#add-movie").on("click", function(event) {
-        event.preventDefault();
-        // This line grabs the input from the textbox
-        var movie = $("#movie-input").val().trim();
-        // Adding movie from the textbox to our array
-        movies.push(movie);
-        // Calling renderButtons which handles the processing of our movie array
-        renderButtons();
-      });
-      // Adding a click event listener to all elements with a class of "movie"
+
       $(document).on("click", ".iconbutton", displayMovieInfo);
       $(document).on("click", ".go-btn", displayMovieInfo);
       $(document).on("click", ".emotionbutton", displayMovieInfo);
-      // Calling the renderButtons function to display the intial buttons
