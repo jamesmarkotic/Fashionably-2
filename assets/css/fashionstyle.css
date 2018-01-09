@@ -1,3 +1,19 @@
-#shopstyle {
-  display: inline-block;
+/* Tag Modifications */
+
+
+/* Class Modifications */
+.emotionbutton {
+  height: 125px;
+  width: 125px;
+  margin: 5px;
 }
+
+.iconbutton {
+  margin: 5px;
+}
+
+.fashimage {
+  display: inline-block;
+  margin: 5px;
+}
+/* ID Modifications */

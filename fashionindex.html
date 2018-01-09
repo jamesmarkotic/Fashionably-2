@@ -3,57 +3,39 @@
     <head>
       <title>Fashionably</title>
       <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-      <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
       <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css" rel="stylesheet" integrity="sha384-Xqcy5ttufkC3rBa8EdiAyA1VgOGrmel2Y+wxm4K3kI3fcjTWlDWrlnxyD6hOi3PF" crossorigin="anonymous">
       <link rel="stylesheet" type="text/css" href="assets/css/fashionstyle.css">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
 
     <body>
+      <!-- <input id="fileupload" type="file" name="files[]" data-url="server/php/" multiple> -->
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js" integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk=" crossorigin="anonymous"></script>
+
+
+<script src="./jqueryfileupload/js/jquery.iframe-transport.js"></script>
+<!-- <script src="./jqueryfileupload/js/jquery.ui.widget.js"></script> -->
+<script src="./jqueryfileupload/js/jquery.fileupload.js"></script>
+<script src="./jqueryfileupload/js/jquery.fileupload-process.js"></script>
+<script src="./jqueryfileupload/js/jquery.iframe-transport.js"></script>
+<script src="./jqueryfileupload/js/jquery.fileupload-image.js"></script>
+<script src="./jqueryfileupload/js/jquery.fileupload-audio.js"></script>
+<script src="./jqueryfileupload/js/jquery.fileupload-video.js"></script>
+<script src="./jqueryfileupload/js/jquery.fileupload-validate.js"></script>
+<script src="./jqueryfileupload/js/jquery.fileupload-ui.js"></script>
+<script src="./jqueryfileupload/js/jquery.fileupload-jquery-ui.js"></script>
+<script src="./jqueryfileupload/js/main.js"></script>
+
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <nav class="navbar navbar-default">
-              <div class="container-fluid">
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-                  <a class="navbar-brand" href="#">Brand</a>
-                </div>
-
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                  <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">Link</a></li>
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">One more separated link</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                  <form class="navbar-form navbar-left" role="search">
-                    <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Search">
-                    </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
-                  </form>
-                  <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Link</a></li>
-                  </ul>
-                </div>
-              </div>
-            </nav>
+            <div class="jumbotron">
+              <h2>Fashionably</h2>
+              <p>This is our Fashion App/Webpage</p>
+              <p></p>
+            </div>
           </div>
         </div>
       </div>
@@ -62,62 +44,63 @@
         <div class="row">
 
           <div class="col-md-6 col-sm-6">
-            <div class="jumbotron">
+            <div class="jumbotron" id="heroImage">
               <h1>Strike a Pose</h1>
               <p>Upload Your Most Fashionable Pose (we will figure out your look!)</p>
-              <p><a class="btn btn-primary btn-lg">Learn more</a></p>
             </div>
           </div>
 
-            <div class="col-sm-6 col-md-6">
-                <div class="thumbnail">
-                  <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+          <div class="col-sm-6 col-md-6">
+              <div class="thumbnail">
+                <div class="row">
+                  <div class="col-md-3 col-sm-3 col-xs-3">
                     <button class="iconbutton" data-name="kfash">
-                      <span title="Kate Middleton"><img id="kate" class="img-responsive img-control" src="assets/images/kate.jpg" alt="image"></span></button>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                    <button class="iconbutton" data-name="jfash">
-                      <span title="Jennifer Anniston"><img id="jennifer" class="img-responsive img-control" src="assets/images/jennifer.jpg" alt="image"></span></button>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" class="iconbutton">
-                      <button class="iconbutton" data-name="sfash">
-                        <span title="Scarlett Johannson"><img id="scarlett" class="img-responsive img-control" src="assets/images/scarlett.jpg" alt="image"></span>
+                      <span title="Kate Middleton"><img id="kate" class="img-responsive" src="assets/images/kate.jpg" alt="image"></span>
                     </button>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" class="iconbutton">
-                      <button class="iconbutton" data-name="mfash">
-                        <span title="Meghan Markle"><img id="meghan" class="img-responsive img-control" src="assets/images/meghan.jpg" alt="image"></span>
-                      </button>
-                    </div>
                   </div>
-
-                  <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" class="iconbutton">
-                      <button class="iconbutton" data-name="wfash">
-                        <span title="Will Pharell"><img id="pharell" class="img-responsive" src="assets/images/pharell.png" alt="image"></span>
-                      </button>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" class="iconbutton">
-                      <button class="iconbutton" data-name="dfash">
-                        <span title="David Beckham"><img id="beckham" class="img-responsive" src="assets/images/beckham.jpg" alt="image"></span>
-                      </button>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" class="iconbutton">
-                      <button class="iconbutton" data-name="jdfash">
-                        <span><img title="Johnny Depp" id="johnny" class="img-responsive" src="assets/images/johnny.jpg" alt="image"></span>
-                      </button>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" class="iconbutton">
-                      <button class="iconbutton" data-name="afash">
-                        <span title="Alexander Skarsgård"><img id="alex" class="img-responsive" src="assets/images/alex.jpg" alt="image"></span>
-                      </button>
-                    </div>
+                  <div class="col-md-3 col-sm-3 col-xs-3">
+                    <button class="iconbutton" data-name="jfash">
+                      <span title="Jennifer Anniston"><img id="jennifer" class="img-responsive" src="assets/images/jennifer.jpg" alt="image"></span>
+                    </button>
                   </div>
-                  <div class="caption">
-                    <h3>Choose Your Style Icon! Press the Picture!</h3>
+                  <div class="col-md-3 col-sm-3 col-xs-3" class="iconbutton">
+                    <button class="iconbutton" data-name="sfash">
+                      <span title="Scarlett Johannson"><img id="scarlett" class="img-responsive" src="assets/images/scarlett.jpg" alt="image"></span>
+                    </button>
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-3" class="iconbutton" data-name="mfash">
+                    <button class="iconbutton" data-name="mfash">
+                      <span title="Meghan Markle"><img id="meghan" class="img-responsive" src="assets/images/meghan.jpg" alt="image"></span>
+                    </button>
                   </div>
                 </div>
+
+                <div class="row">
+                  <div class="col-md-3 col-sm-3 col-xs-3" class="iconbutton" data-name="wfash">
+                    <button class="iconbutton" data-name="wfash">
+                      <span title="Will Pharell"><img id="pharell" class="img-responsive" src="assets/images/pharell.png" alt="image"></span>
+                    </button>
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-3" class="iconbutton" data-name="dfash">
+                    <button class="iconbutton" data-name="dfash">
+                      <span title="David Beckham"><img id="beckham" class="img-responsive" src="assets/images/beckham.jpg" alt="image"></span>
+                    </button>
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-3" class="iconbutton" data-name="jdfash">
+                    <button class="iconbutton" data-name="jdfash">
+                      <span title="Johnny Depp"><img id="johnny" class="img-responsive" src="assets/images/johnny.jpg" alt="image"></span>
+                    </button>
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-3" class="iconbutton" data-name="afash">
+                    <button class="iconbutton" data-name="afash">
+                      <span title="Alexander Skarsgård"><img id="alex" class="img-responsive" src="assets/images/alex.jpg" alt="image"></span>
+                    </button>
+                  </div>
+                </div>
+                <div class="caption">
+                  <h3>Choose Your Style Icon! Press the Picture!</h3>
+                </div>
+              </div>
             </div>
 
         </div>
@@ -125,15 +108,16 @@
 
       <div class="container">
         <div class="row">
-          <div class="col-md-1">
-            <a href="#" class="btn btn-default">Upload</a>
-          </div>
-          <div class="col-md-5">
+          <div class="col-md-6">
             <div class="form-group">
               <div class="input-group">
-                <input type="text" class="form-control" placeholder="Image URL">
+
+      <!-- Button triggers new movie to be added -->
+
+
+                <input id="urlinput" type="text" class="form-control" placeholder="Image URL">
                 <span class="input-group-btn">
-                  <button class="btn btn-default" type="button">Go</button>
+                  <button class="btn btn-default go-btn" data-name="yourfash" type="button">Go</button>
                 </span>
               </div>
             </div>
@@ -147,9 +131,50 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-md-12">
-            <div id="shopstyle" class="jumbotron">
+          <div class="col-md-6">
+            <div class="jumbotron" id="emotions">
+              <h2>How are you feeling today?</h2>
+              <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-4">
+                  <button class="emotionbutton" data-name="anxiousfash"><img class="img-responsive" id="anxious" src="assets/images/anxious.png"></button>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4">
+                  <button class="emotionbutton" data-name="unhappyfash"><img class="img-responsive" id="unhappy" src="assets/images/unhappy.png"></button>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4">
+                  <button class="emotionbutton" data-name="happyfash"><img class="img-responsive" id="happy" src="assets/images/happy.png"></button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-4">
+                  <button class="emotionbutton" data-name="coolfash"><img class="img-responsive" id="cool" src="assets/images/cool.png"></button>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4">
+                  <button class="emotionbutton" data-name="angelicfash"><img class="img-responsive" id="angelic" src="assets/images/angelic.png"></button>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4">
+                  <button class="emotionbutton" data-name="sillyfash"><img class="img-responsive" id="silly" src="assets/images/silly.png"></button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-4">
+                  <button class="emotionbutton" data-name="sexyfash"><img class="img-responsive" id="sexy" src="assets/images/sexy.png"></button>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4">
 
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4">
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div id="shopstyle" class="jumbotron">
+              <!-- <h2>Jumbotron</h2>
+              <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+              <p><a class="btn btn-primary btn-lg">Learn more</a></p> -->
             </div>
           </div>
 
