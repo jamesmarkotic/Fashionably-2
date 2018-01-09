@@ -1,6 +1,6 @@
 
-      var audioElement = document.createElement("audio");
-      audioElement.setAttribute("src", "sexy.mp3");
+    var audioElement = document.createElement("audio");
+    audioElement.setAttribute("src", "sexy.mp3");
 
     function displayMovieInfo() {
 
@@ -12,7 +12,7 @@
           $.ajax({
           url: queryURL,
           method: "GET"
-        }).done(function(response) {
+          }).done(function(response) {
 
           console.log(response);
 
@@ -30,76 +30,76 @@
             $(itemLink).append(image);
             $("#shopstyle").append(itemLink);
 
+            };
+
+          });
         };
 
-        });
-      };
-
-      if (movie=="coolfash") {
+        if (movie=="coolfash") {
           var queryURL = "http://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&b=bb-dakota,hugo-boss,bcbg,club-monaco&offset=0&limit=12";
           $("#shopstyle").empty();
           $.ajax({
           url: queryURL,
           method: "GET"
-        }).done(function(response) {
+          }).done(function(response) {
 
-          console.log(response);
+            console.log(response);
 
-          for (var i = 0; i < response.products.length; i++) {
+            for (var i = 0; i < response.products.length; i++) {
 
 
-            var imgURL = response.products[i].image.sizes.Medium.url;
-            var price = response.products[i].price;
-            var brandedName = response.products[i].brandedName;
-            var itemOrigin = response.products[i].clickUrl;
+              var imgURL = response.products[i].image.sizes.Medium.url;
+              var price = response.products[i].price;
+              var brandedName = response.products[i].brandedName;
+              var itemOrigin = response.products[i].clickUrl;
 
-            var itemLink = $('<a>').attr({href: itemOrigin, target: '_blank'});
-            var image = $("<img>").attr({src: imgURL, title: '$' + price + ', ' + brandedName}).attr("class", "fashimage img-responsive");
+              var itemLink = $('<a>').attr({href: itemOrigin, target: '_blank'});
+              var image = $("<img>").attr({src: imgURL, title: '$' + price + ', ' + brandedName}).attr("class", "fashimage img-responsive");
 
-            $(itemLink).append(image);
-            $("#shopstyle").append(itemLink);
+              $(itemLink).append(image);
+              $("#shopstyle").append(itemLink);
 
-        };
+              };
 
-        });
-      };
+            });
+          };
 
-      if (movie=="unhappyfash") {
+        if (movie=="unhappyfash") {
           var queryURL = "http://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=black,rag-bone&b=helmut-lang,gucci&offset=0&limit=12";
           $("#shopstyle").empty();
           $.ajax({
           url: queryURL,
           method: "GET"
-        }).done(function(response) {
+          }).done(function(response) {
 
-          console.log(response);
+            console.log(response);
 
-          for (var i = 0; i < response.products.length; i++) {
+            for (var i = 0; i < response.products.length; i++) {
 
 
-            var imgURL = response.products[i].image.sizes.Medium.url;
-            var price = response.products[i].price;
-            var brandedName = response.products[i].brandedName;
-            var itemOrigin = response.products[i].clickUrl;
+              var imgURL = response.products[i].image.sizes.Medium.url;
+              var price = response.products[i].price;
+              var brandedName = response.products[i].brandedName;
+              var itemOrigin = response.products[i].clickUrl;
 
-            var itemLink = $('<a>').attr({href: itemOrigin, target: '_blank'});
-            var image = $("<img>").attr({src: imgURL, title: '$' + price + ', ' + brandedName}).attr("class", "fashimage img-responsive");
+              var itemLink = $('<a>').attr({href: itemOrigin, target: '_blank'});
+              var image = $("<img>").attr({src: imgURL, title: '$' + price + ', ' + brandedName}).attr("class", "fashimage img-responsive");
 
-            $(itemLink).append(image);
-            $("#shopstyle").append(itemLink);
+              $(itemLink).append(image);
+              $("#shopstyle").append(itemLink);
 
-        };
+              };
 
-        });
-      };
+            });
+          };
 
-            if (movie=="anxiousfash") {
+        if (movie=="anxiousfash") {
           var queryURL = "http://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=grunge,black,ripped&offset=0&limit=12";
           $("#shopstyle").empty();
           $.ajax({
           url: queryURL,
           method: "GET"
-        }).done(function(response) {
+          }).done(function(response) {
 
           console.log(response);
 
@@ -117,17 +117,17 @@
             $(itemLink).append(image);
             $("#shopstyle").append(itemLink);
 
-        };
+            };
 
-        });
-      };
+          });
+        };
 
        if (movie=="sillyfash") {
-          var queryURL = "http://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=bright&b=viktor-rolf,vivienne-westwood,alexander-mcqueen&offset=0&limit=12";
-          $("#shopstyle").empty();
-          $.ajax({
-          url: queryURL,
-          method: "GET"
+        var queryURL = "http://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=bright&b=viktor-rolf,vivienne-westwood,alexander-mcqueen&offset=0&limit=12";
+        $("#shopstyle").empty();
+        $.ajax({
+        url: queryURL,
+        method: "GET"
         }).done(function(response) {
 
           console.log(response);
@@ -146,17 +146,17 @@
             $(itemLink).append(image);
             $("#shopstyle").append(itemLink);
 
-        };
+          };
 
         });
       };
 
       if (movie=="sexyfash") {
-          var queryURL = "http://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=dresses&b=blumarine,roberto-cavalli,versace&offset=0&limit=12";
-          $("#shopstyle").empty();
-          $.ajax({
-          url: queryURL,
-          method: "GET"
+        var queryURL = "http://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=dresses&b=blumarine,roberto-cavalli,versace&offset=0&limit=12";
+        $("#shopstyle").empty();
+        $.ajax({
+        url: queryURL,
+        method: "GET"
         }).done(function(response) {
 
           console.log(response);
@@ -175,7 +175,7 @@
             $(itemLink).append(image);
             $("#shopstyle").append(itemLink);
 
-        };
+          };
 
         });
       };
@@ -186,7 +186,7 @@
           $.ajax({
           url: queryURL,
           method: "GET"
-        }).done(function(response) {
+          }).done(function(response) {
 
           console.log(response);
 
@@ -204,7 +204,7 @@
             $(itemLink).append(image);
             $("#shopstyle").append(itemLink);
 
-        };
+          };
 
         });
       };
@@ -271,13 +271,13 @@
 
 
 
-        if (movie=="kfash") {
-          var queryURL = "http://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=jackets,dresses&b=burberry&offset=0&limit=12";
+      if (movie=="kfash") {
+        var queryURL = "http://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=jackets,dresses&b=burberry&offset=0&limit=12";
 
         $("#shopstyle").empty();
         $.ajax({
-          url: queryURL,
-          method: "GET"
+        url: queryURL,
+        method: "GET"
         }).done(function(response) {
 
           console.log(response);
@@ -296,19 +296,19 @@
             $(itemLink).append(image);
             $("#shopstyle").append(itemLink);
 
-        };
+          };
 
         });
       };
 
 
       if (movie=="jfash") {
-          var queryURL = "http://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=jeans&b=gap&offset=0&limit=12";
+        var queryURL = "http://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=jeans&b=gap&offset=0&limit=12";
 
         $("#shopstyle").empty();
         $.ajax({
-          url: queryURL,
-          method: "GET"
+        url: queryURL,
+        method: "GET"
         }).done(function(response) {
 
           console.log(response);
@@ -331,8 +331,190 @@
 
         });
       };
+
+      if (movie=="sfash") {
+        var queryURL = "http://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=jackets,dresses&b=burberry&offset=0&limit=12";
+
+        $("#shopstyle").empty();
+        $.ajax({
+        url: queryURL,
+        method: "GET"
+        }).done(function(response) {
+
+          console.log(response);
+
+          for (var i = 0; i < response.products.length; i++) {
+
+
+            var imgURL = response.products[i].image.sizes.Medium.url;
+            var price = response.products[i].price;
+            var brandedName = response.products[i].brandedName;
+            var itemOrigin = response.products[i].clickUrl;
+
+            var itemLink = $('<a>').attr({href: itemOrigin, target: '_blank'});
+            var image = $("<img>").attr({src: imgURL, title: '$' + price + ', ' + brandedName}).attr("class", "fashimage img-responsive");
+
+            $(itemLink).append(image);
+            $("#shopstyle").append(itemLink);
+
+        };
+
+      });
+    };
+    if (movie=="mfash") {
+      var queryURL = "http://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=jackets,dresses&b=burberry&offset=0&limit=12";
+
+      $("#shopstyle").empty();
+      $.ajax({
+      url: queryURL,
+      method: "GET"
+      }).done(function(response) {
+
+        console.log(response);
+
+        for (var i = 0; i < response.products.length; i++) {
+
+
+          var imgURL = response.products[i].image.sizes.Medium.url;
+          var price = response.products[i].price;
+          var brandedName = response.products[i].brandedName;
+          var itemOrigin = response.products[i].clickUrl;
+
+          var itemLink = $('<a>').attr({href: itemOrigin, target: '_blank'});
+          var image = $("<img>").attr({src: imgURL, title: '$' + price + ', ' + brandedName}).attr("class", "fashimage img-responsive");
+
+          $(itemLink).append(image);
+          $("#shopstyle").append(itemLink);
+
+        };
+
+    });
+  };
+
+  if (movie=="wfash") {
+    var queryURL = "http://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=jackets,dresses&b=burberry&offset=0&limit=12";
+
+    $("#shopstyle").empty();
+    $.ajax({
+    url: queryURL,
+    method: "GET"
+    }).done(function(response) {
+
+    console.log(response);
+
+    for (var i = 0; i < response.products.length; i++) {
+
+
+      var imgURL = response.products[i].image.sizes.Medium.url;
+      var price = response.products[i].price;
+      var brandedName = response.products[i].brandedName;
+      var itemOrigin = response.products[i].clickUrl;
+
+      var itemLink = $('<a>').attr({href: itemOrigin, target: '_blank'});
+      var image = $("<img>").attr({src: imgURL, title: '$' + price + ', ' + brandedName}).attr("class", "fashimage img-responsive");
+
+      $(itemLink).append(image);
+      $("#shopstyle").append(itemLink);
+
+      };
+
+    });
+  };
+
+  if (movie=="dfash") {
+    var queryURL = "http://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=jackets,dresses&b=burberry&offset=0&limit=12";
+
+  $("#shopstyle").empty();
+  $.ajax({
+    url: queryURL,
+    method: "GET"
+  }).done(function(response) {
+
+    console.log(response);
+
+    for (var i = 0; i < response.products.length; i++) {
+
+
+      var imgURL = response.products[i].image.sizes.Medium.url;
+      var price = response.products[i].price;
+      var brandedName = response.products[i].brandedName;
+      var itemOrigin = response.products[i].clickUrl;
+
+      var itemLink = $('<a>').attr({href: itemOrigin, target: '_blank'});
+      var image = $("<img>").attr({src: imgURL, title: '$' + price + ', ' + brandedName}).attr("class", "fashimage img-responsive");
+
+      $(itemLink).append(image);
+      $("#shopstyle").append(itemLink);
+
+  };
+
+  });
+};
+
+
+
+    if (movie=="jdfash") {
+      var queryURL = "http://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=jackets,dresses&b=burberry&offset=0&limit=12";
+
+      $("#shopstyle").empty();
+      $.ajax({
+      url: queryURL,
+      method: "GET"
+      }).done(function(response) {
+
+      console.log(response);
+
+      for (var i = 0; i < response.products.length; i++) {
+
+
+        var imgURL = response.products[i].image.sizes.Medium.url;
+        var price = response.products[i].price;
+        var brandedName = response.products[i].brandedName;
+        var itemOrigin = response.products[i].clickUrl;
+
+        var itemLink = $('<a>').attr({href: itemOrigin, target: '_blank'});
+        var image = $("<img>").attr({src: imgURL, title: '$' + price + ', ' + brandedName}).attr("class", "fashimage img-responsive");
+
+        $(itemLink).append(image);
+        $("#shopstyle").append(itemLink);
+
+        };
+
+      });
     };
 
+if (movie=="afash") {
+  var queryURL = "http://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=jackets,dresses&b=burberry&offset=0&limit=12";
+
+  $("#shopstyle").empty();
+  $.ajax({
+  url: queryURL,
+  method: "GET"
+  }).done(function(response) {
+
+    console.log(response);
+
+    for (var i = 0; i < response.products.length; i++) {
+
+
+      var imgURL = response.products[i].image.sizes.Medium.url;
+      var price = response.products[i].price;
+      var brandedName = response.products[i].brandedName;
+      var itemOrigin = response.products[i].clickUrl;
+
+      var itemLink = $('<a>').attr({href: itemOrigin, target: '_blank'});
+      var image = $("<img>").attr({src: imgURL, title: '$' + price + ', ' + brandedName}).attr("class", "fashimage img-responsive");
+
+      $(itemLink).append(image);
+      $("#shopstyle").append(itemLink);
+
+      };
+
+    });
+  };
+
+};
+// End of main function
       $(document).on("click", ".iconbutton", displayMovieInfo);
       $(document).on("click", ".go-btn", displayMovieInfo);
       $(document).on("click", ".emotionbutton", displayMovieInfo);
