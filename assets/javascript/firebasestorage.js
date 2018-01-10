@@ -7,8 +7,8 @@ var config = {
     storageBucket: "fashionably-f68d1.appspot.com",
     messagingSenderId: "214704986736"
   };
-  firebase.initializeApp(config);
-  var database = firebase.database();
+firebase.initializeApp(config);
+var database = firebase.database();
 
 function SaveData(Price, ImageURL, BrandName)
 {
