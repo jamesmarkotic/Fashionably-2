@@ -5,7 +5,7 @@
     var config = {
         apiKey: "AIzaSyAF5EQQcMjKOS8sjk59vsEn3grMYTFLG8A",
         authDomain: "fashionably-f68d1.firebaseapp.com",
-        databaseURL: "https://fashionably-f68d1.firebaseio.com",
+        databaseURL: "httpss://fashionably-f68d1.firebaseio.com",
         projectId: "fashionably-f68d1",
         storageBucket: "fashionably-f68d1.appspot.com",
         messagingSenderId: "214704986736"
@@ -19,7 +19,7 @@
         audioElement.play();
         var movie = $(this).attr("data-name");
         if (movie=="happyfash") {
-          var queryURL = "http://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=floral,bright&b=kate-spade,dolce-gabbana,alice-olivia&offset=0&limit=12";
+          var queryURL = "https://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=floral,bright&b=kate-spade,dolce-gabbana,alice-olivia&offset=0&limit=12";
           $("#shopstyle").empty();
           database.ref().remove();
           $.ajax({
@@ -63,7 +63,7 @@
         };
 
         if (movie=="coolfash") {
-          var queryURL = "http://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&b=bb-dakota,hugo-boss,bcbg,club-monaco&offset=0&limit=12";
+          var queryURL = "https://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&b=bb-dakota,hugo-boss,bcbg,club-monaco&offset=0&limit=12";
           $("#shopstyle").empty();
           database.ref().remove();
           $.ajax({
@@ -108,7 +108,7 @@
           };
 
         if (movie=="unhappyfash") {
-          var queryURL = "http://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=black,rag-bone&b=helmut-lang,gucci&offset=0&limit=12";
+          var queryURL = "https://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=black,rag-bone&b=helmut-lang,gucci&offset=0&limit=12";
           $("#shopstyle").empty();
           database.ref().remove();
           $.ajax({
@@ -153,7 +153,7 @@
           };
 
         if (movie=="anxiousfash") {
-          var queryURL = "http://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=grunge,black,ripped&offset=0&limit=12";
+          var queryURL = "https://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=grunge,black,ripped&offset=0&limit=12";
           $("#shopstyle").empty();
           database.ref().remove();
           $.ajax({
@@ -198,7 +198,7 @@
         };
 
        if (movie=="sillyfash") {
-        var queryURL = "http://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=bright&b=viktor-rolf,vivienne-westwood,alexander-mcqueen&offset=0&limit=12";
+        var queryURL = "https://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=bright&b=viktor-rolf,vivienne-westwood,alexander-mcqueen&offset=0&limit=12";
         $("#shopstyle").empty();
         database.ref().remove();
         $.ajax({
@@ -243,7 +243,7 @@
       };
 
       if (movie=="sexyfash") {
-        var queryURL = "http://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=dresses&b=blumarine,roberto-cavalli,versace&offset=0&limit=12";
+        var queryURL = "https://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=dresses&b=blumarine,roberto-cavalli,versace&offset=0&limit=12";
         $("#shopstyle").empty();
         database.ref().remove();
         $.ajax({
@@ -288,7 +288,7 @@
       };
 
        if (movie=="angelicfash") {
-          var queryURL = "http://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=white-dress,lace&offset=0&limit=12";
+          var queryURL = "https://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=white-dress,lace&offset=0&limit=12";
           $("#shopstyle").empty();
           database.ref().remove();
           $.ajax({
@@ -342,8 +342,8 @@
           var APIkey = "b6MXLXj9cETIUjDe4DMVy6SGuDlrtLko"
           var APIsecret = "BP2cM4JvuRe1f5bH-G25OPJIQ5hanehq"
 
-          var queryURL = 'https://api-us.faceplusplus.com/humanbodypp/beta/detect?api_key=b6MXLXj9cETIUjDe4DMVy6SGuDlrtLko&api_secret=BP2cM4JvuRe1f5bH-G25OPJIQ5hanehq&return_attributes=gender,cloth_color&image_url=' + imageUrl;
-         // var testURL = 'https://api-us.faceplusplus.com/humanbodypp/beta/detect?api_key=b6MXLXj9cETIUjDe4DMVy6SGuDlrtLko&api_secret=BP2cM4JvuRe1f5bH-G25OPJIQ5hanehq&return_attributes=gender,cloth_color&image_url=https://media.vanityfair.com/photos/5355688206bf36e64100009e/master/w_768,c_limit/scarlett-johansson-vanity-fair-ss04.jpg'
+          var queryURL = 'httpss://api-us.faceplusplus.com/humanbodypp/beta/detect?api_key=b6MXLXj9cETIUjDe4DMVy6SGuDlrtLko&api_secret=BP2cM4JvuRe1f5bH-G25OPJIQ5hanehq&return_attributes=gender,cloth_color&image_url=' + imageUrl;
+         // var testURL = 'httpss://api-us.faceplusplus.com/humanbodypp/beta/detect?api_key=b6MXLXj9cETIUjDe4DMVy6SGuDlrtLko&api_secret=BP2cM4JvuRe1f5bH-G25OPJIQ5hanehq&return_attributes=gender,cloth_color&image_url=httpss://media.vanityfair.com/photos/5355688206bf36e64100009e/master/w_768,c_limit/scarlett-johansson-vanity-fair-ss04.jpg'
         $.ajax({
           url: queryURL,
           type: "POST"
@@ -366,9 +366,9 @@
           }
 
 
-          var innerURL = "http://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=" + colorOne +","+ colorTwo +","+ searchGender + "-clothes&offset=0&limit=12";
-          // var innerURL = "http://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=" + colorOne +","+ colorTwo + "&offset=0&limit=12";
-          // var innerURL = "http://api.shopstyle.com/api/v2/browse/"+ searchGender + "-clothes?pid=uid3849-40327957-94&fts=" + colorOne +","+ colorTwo + searchGender +"&offset=0&limit=12"
+          var innerURL = "https://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=" + colorOne +","+ colorTwo +","+ searchGender + "-clothes&offset=0&limit=12";
+          // var innerURL = "https://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=" + colorOne +","+ colorTwo + "&offset=0&limit=12";
+          // var innerURL = "https://api.shopstyle.com/api/v2/browse/"+ searchGender + "-clothes?pid=uid3849-40327957-94&fts=" + colorOne +","+ colorTwo + searchGender +"&offset=0&limit=12"
           $.ajax({
             url: innerURL,
             method: "GET"
@@ -413,7 +413,7 @@
 
 
       if (movie=="kfash") {
-        var queryURL = "http://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=jackets,dresses&b=burberry&offset=0&limit=12";
+        var queryURL = "https://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=jackets,dresses&b=burberry&offset=0&limit=12";
         database.ref().remove();
         $("#shopstyle").empty();
         $.ajax({
@@ -459,7 +459,7 @@
 
 
       if (movie=="jfash") {
-        var queryURL = "http://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=jeans&b=gap&offset=0&limit=12";
+        var queryURL = "https://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=jeans&b=gap&offset=0&limit=12";
         database.ref().remove();
         $("#shopstyle").empty();
         $.ajax({
@@ -504,7 +504,7 @@
       };
 
       if (movie=="sfash") {
-        var queryURL = "http://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=dresses&b=versace,dior&offset=0&limit=12";
+        var queryURL = "https://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=dresses&b=versace,dior&offset=0&limit=12";
         database.ref().remove();
         $("#shopstyle").empty();
         $.ajax({
@@ -548,7 +548,7 @@
       });
     };
     if (movie=="mfash") {
-      var queryURL = "http://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=jackets,dresses&b=everlane,topshop,zara&offset=0&limit=12";
+      var queryURL = "https://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=jackets,dresses&b=everlane,topshop,zara&offset=0&limit=12";
       database.ref().remove();
       $("#shopstyle").empty();
       $.ajax({
@@ -593,7 +593,7 @@
   };
 
   if (movie=="wfash") {
-    var queryURL = "http://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=jackets,shirts&b=timberland,nudie&offset=0&limit=12";
+    var queryURL = "https://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=jackets,shirts&b=timberland,nudie&offset=0&limit=12";
     database.ref().remove();
     $("#shopstyle").empty();
     $.ajax({
@@ -638,7 +638,7 @@
   };
 
   if (movie=="dfash") {
-    var queryURL = "http://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=jackets,shirts&b=hugo-boss&offset=0&limit=12";
+    var queryURL = "https://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=jackets,shirts&b=hugo-boss&offset=0&limit=12";
     database.ref().remove();
   $("#shopstyle").empty();
   $.ajax({
@@ -685,7 +685,7 @@
 
 
     if (movie=="jdfash") {
-      var queryURL = "http://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=blazer,shirt&b=idle-man,vito&offset=0&limit=12";
+      var queryURL = "https://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=blazer,shirt&b=idle-man,vito&offset=0&limit=12";
       database.ref().remove();
       $("#shopstyle").empty();
       $.ajax({
@@ -730,7 +730,7 @@
     };
 
 if (movie=="afash") {
-  var queryURL = "http://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=pants,shirt,blazer&b=hugo-boss,ted-baker&offset=0&limit=12";
+  var queryURL = "https://api.shopstyle.com/api/v2/products?pid=uid3849-40327957-94&fts=pants,shirt,blazer&b=hugo-boss,ted-baker&offset=0&limit=12";
   database.ref().remove();
   $("#shopstyle").empty();
   $.ajax({
