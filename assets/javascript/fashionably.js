@@ -5,7 +5,7 @@
     var config = {
         apiKey: "AIzaSyAF5EQQcMjKOS8sjk59vsEn3grMYTFLG8A",
         authDomain: "fashionably-f68d1.firebaseapp.com",
-        databaseURL: "httpss://fashionably-f68d1.firebaseio.com",
+        databaseURL: "https://fashionably-f68d1.firebaseio.com",
         projectId: "fashionably-f68d1",
         storageBucket: "fashionably-f68d1.appspot.com",
         messagingSenderId: "214704986736"
@@ -342,8 +342,8 @@
           var APIkey = "b6MXLXj9cETIUjDe4DMVy6SGuDlrtLko"
           var APIsecret = "BP2cM4JvuRe1f5bH-G25OPJIQ5hanehq"
 
-          var queryURL = 'httpss://api-us.faceplusplus.com/humanbodypp/beta/detect?api_key=b6MXLXj9cETIUjDe4DMVy6SGuDlrtLko&api_secret=BP2cM4JvuRe1f5bH-G25OPJIQ5hanehq&return_attributes=gender,cloth_color&image_url=' + imageUrl;
-         // var testURL = 'httpss://api-us.faceplusplus.com/humanbodypp/beta/detect?api_key=b6MXLXj9cETIUjDe4DMVy6SGuDlrtLko&api_secret=BP2cM4JvuRe1f5bH-G25OPJIQ5hanehq&return_attributes=gender,cloth_color&image_url=httpss://media.vanityfair.com/photos/5355688206bf36e64100009e/master/w_768,c_limit/scarlett-johansson-vanity-fair-ss04.jpg'
+          var queryURL = 'https://api-us.faceplusplus.com/humanbodypp/beta/detect?api_key=b6MXLXj9cETIUjDe4DMVy6SGuDlrtLko&api_secret=BP2cM4JvuRe1f5bH-G25OPJIQ5hanehq&return_attributes=gender,cloth_color&image_url=' + imageUrl;
+         // var testURL = 'https://api-us.faceplusplus.com/humanbodypp/beta/detect?api_key=b6MXLXj9cETIUjDe4DMVy6SGuDlrtLko&api_secret=BP2cM4JvuRe1f5bH-G25OPJIQ5hanehq&return_attributes=gender,cloth_color&image_url=https://media.vanityfair.com/photos/5355688206bf36e64100009e/master/w_768,c_limit/scarlett-johansson-vanity-fair-ss04.jpg'
         $.ajax({
           url: queryURL,
           type: "POST"
